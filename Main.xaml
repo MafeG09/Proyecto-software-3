@@ -1,0 +1,341 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" mva:VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1146,2902" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:mva="clr-namespace:Microsoft.VisualBasic.Activities;assembly=System.Activities" xmlns:p="http://schemas.uipath.com/workflow/activities/intelligentocr" xmlns:p1="http://schemas.uipath.com/workflow/activities/ocr" xmlns:p2="http://schemas.uipath.com/workflow/activities/intelligentocr/classification" xmlns:p3="http://schemas.uipath.com/workflow/activities/document-processing-contracts/dom" xmlns:p4="http://schemas.uipath.com/workflow/activities/document-processing-contracts/classification" xmlns:p5="http://schemas.uipath.com/workflow/activities/intelligentocr/extraction" xmlns:p6="http://schemas.uipath.com/workflow/activities/document-processing-contracts/extraction" xmlns:p7="http://schemas.uipath.com/workflow/activities/document-processing-contracts/results" xmlns:p8="http://schemas.uipath.com/workflow/activities/documentunderstanding-ml" xmlns:p9="http://schemas.uipath.com/workflow/activities/document-processing-contracts/taxonomy" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:sc="clr-namespace:System.ComponentModel;assembly=System" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=mscorlib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=mscorlib" xmlns:sd="clr-namespace:System.Drawing;assembly=System.Drawing" xmlns:sd1="clr-namespace:System.Data;assembly=System.Data" xmlns:si="clr-namespace:System.IO;assembly=mscorlib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="94">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Activities.DynamicUpdate</x:String>
+      <x:String>UiPath.Shared.Activities.Business</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.Digitization</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Dom</x:String>
+      <x:String>UiPath.Vision.OCR</x:String>
+      <x:String>UiPath.OCR.Contracts</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>System.Runtime.InteropServices</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.OCR.Activities</x:String>
+      <x:String>UiPath.OCR.Contracts.Activities</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Taxonomy</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Results</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.DocumentClassification</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.TaxonomyManagement</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.Classification</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts</x:String>
+      <x:String>UiPath.DocumentUnderstanding.ML.Activities</x:String>
+      <x:String>UiPath.DocumentUnderstanding.ML.Activities.Editors</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.DataExtraction</x:String>
+      <x:String>UiPath.DocumentProcessing.Contracts.DataExtraction</x:String>
+      <x:String>UiPath.IntelligentOCR.Activities.ValidationStation</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Excel.Activities</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.IntelligentOCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentProcessing.Contracts</AssemblyReference>
+      <AssemblyReference>UiPath.Vision.Core</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Contracts</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices.RuntimeInformation</AssemblyReference>
+      <AssemblyReference>UiPath.DocumentUnderstanding.ML.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>Microsoft.Bcl.AsyncInterfaces</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Composition</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="Secuencia" sap:VirtualizedContainerService.HintSize="728,2837" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence.Variables>
+      <Variable x:TypeArguments="p9:DocumentTaxonomy" Name="taxonomy" />
+    </Sequence.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <p:LoadTaxonomy DisplayName="Load Taxonomy" sap:VirtualizedContainerService.HintSize="686,103" sap2010:WorkflowViewState.IdRef="LoadTaxonomy_1" Taxonomy="[taxonomy]" />
+    <ui:ForEachFileX DisplayName="Para cada archivo en la carpeta" Folder="C:\Users\juans\OneDrive\Escritorio\Archivos" sap:VirtualizedContainerService.HintSize="686,2602" sap2010:WorkflowViewState.IdRef="ForEachFileX_1" IncludeSubDirectories="False" OrderBy="NameAscFirst" SkipFolderWithoutPermission="False">
+      <ui:ForEachFileX.Body>
+        <ActivityAction x:TypeArguments="si:FileInfo, x:Int32">
+          <ActivityAction.Argument1>
+            <DelegateInArgument x:TypeArguments="si:FileInfo" Name="CurrentFile" />
+          </ActivityAction.Argument1>
+          <ActivityAction.Argument2>
+            <DelegateInArgument x:TypeArguments="x:Int32" Name="CurrentIndex" />
+          </ActivityAction.Argument2>
+          <Sequence DisplayName="Hacer" sap:VirtualizedContainerService.HintSize="652,2353" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <Sequence.Variables>
+              <Variable x:TypeArguments="x:String" Name="strDocumentText" />
+              <Variable x:TypeArguments="p3:Document" Name="dom" />
+              <Variable x:TypeArguments="x:String" Default="https://du.uipath.com/ocr" Name="strOcrEndpoint" />
+              <Variable x:TypeArguments="x:String" Default="tWHEACvVLTF4lbfWKnI6QpM99/toiDvJbi+3wH9XrAw1NYq3KjeYAycaXHMy9SimU8k7JxEpFjvrEKcbOKQbcg==" Name="strApiKey" />
+              <Variable x:TypeArguments="p7:ClassificationResult[]" Name="classificationResults" />
+              <Variable x:TypeArguments="p7:ExtractionResult" Name="extractionResults" />
+              <Variable x:TypeArguments="sd1:DataSet" Name="dataset_extraction" />
+            </Sequence.Variables>
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="610,91" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Procesando Documentos&quot; + CurrentFile.FullName]" />
+            <p:DigitizeDocument ApplyOcrMigrated="True" ApplyOcrOnPdf="Auto" DegreeOfParallelism="-1" DetectCheckboxes="True" DisplayName="Digitalizar documento" DocumentObjectModel="[dom]" DocumentPath="[CurrentFile.FullName]" DocumentText="[strDocumentText]" ForceApplyOCR="False" sap:VirtualizedContainerService.HintSize="610,293" sap2010:WorkflowViewState.IdRef="DigitizeDocument_1">
+              <p:DigitizeDocument.OCREngine>
+                <ActivityFunc x:TypeArguments="sd:Image, x:String, scg:IEnumerable(scg:KeyValuePair(sd:Rectangle, x:String))" Argument1="{x:Reference __ReferenceID0}" Argument2="{x:Reference __ReferenceID1}">
+                  <p1:UiPathDocumentOCR Output="{x:Null}" Text="{x:Null}" UseLocalServer="{x:Null}" ApiKey="[strApiKey]" ComputeSkewAngle="False" DisplayName="UiPath Document OCR" Endpoint="[strOcrEndpoint]" ExtractWords="True" sap:VirtualizedContainerService.HintSize="312,22" sap2010:WorkflowViewState.IdRef="UiPathDocumentOCR_1" Language="auto" Profile="None" Scale="1" Timeout="100000">
+                    <p1:UiPathDocumentOCR.Image>
+                      <InArgument x:TypeArguments="sd:Image">
+                        <DelegateArgumentValue x:TypeArguments="sd:Image" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_1">
+                          <DelegateInArgument x:TypeArguments="sd:Image" x:Name="__ReferenceID0" Name="Image" />
+                        </DelegateArgumentValue>
+                      </InArgument>
+                    </p1:UiPathDocumentOCR.Image>
+                    <p1:UiPathDocumentOCR.PredictionId>
+                      <InArgument x:TypeArguments="x:String">
+                        <DelegateArgumentValue x:TypeArguments="x:String" sap2010:WorkflowViewState.IdRef="DelegateArgumentValue`1_2">
+                          <DelegateInArgument x:TypeArguments="x:String" x:Name="__ReferenceID1" Name="PredictionId" />
+                        </DelegateArgumentValue>
+                      </InArgument>
+                    </p1:UiPathDocumentOCR.PredictionId>
+                  </p1:UiPathDocumentOCR>
+                </ActivityFunc>
+              </p:DigitizeDocument.OCREngine>
+            </p:DigitizeDocument>
+            <p2:ClassifyDocumentScope ClassificationResults="[classificationResults]" DisplayName="Private: Classify Document Scope" DocumentObjectModel="[dom]" DocumentPath="[CurrentFile.FullName]" DocumentText="[strDocumentText]" sap:VirtualizedContainerService.HintSize="610,530" sap2010:WorkflowViewState.IdRef="ClassifyDocumentScope_1" Taxonomy="[taxonomy]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UI7446510514894d57a9cbdbed7e308bf3&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;NoGroup.NoCategory.Comparendo&quot;:{&quot;OriginalDocumentTypeId&quot;:&quot;NoGroup.NoCategory.Comparendo&quot;,&quot;ClassifierDocumentTypeId&quot;:null,&quot;IsDocumentTypeIdMapped&quot;:true}}}},&quot;ClassifierMinimumConfidence&quot;:{&quot;UI7446510514894d57a9cbdbed7e308bf3&quot;:&quot;0&quot;},&quot;DocumentTypesByPersistenceId&quot;:{&quot;UI7446510514894d57a9cbdbed7e308bf3&quot;:[]}}">
+              <p2:ClassifyDocumentScope.Classifiers>
+                <p2:IntelligentKeywordClassifier LearningData="{x:Null}" ApiKey="[strApiKey]" DisplayName="Intelligent Keyword Classifier" Endpoint="https://du.uipath.com/svc/intelligentkeywords" sap:VirtualizedContainerService.HintSize="234,209" sap2010:WorkflowViewState.IdRef="IntelligentKeywordClassifier_1" LearningFilePath="DocumentProcessing\classifierLearning.json" PersistenceId="UI7446510514894d57a9cbdbed7e308bf3">
+                  <p2:IntelligentKeywordClassifier.ClassifierResult>
+                    <OutArgument x:TypeArguments="p4:ClassifierResult">
+                      <DelegateArgumentReference x:TypeArguments="p4:ClassifierResult">
+                        <DelegateOutArgument x:TypeArguments="p4:ClassifierResult" Name="ClassifierResult" />
+                      </DelegateArgumentReference>
+                    </OutArgument>
+                  </p2:IntelligentKeywordClassifier.ClassifierResult>
+                  <p2:IntelligentKeywordClassifier.DocumentObjectModel>
+                    <InArgument x:TypeArguments="p3:Document">
+                      <DelegateArgumentValue x:TypeArguments="p3:Document">
+                        <DelegateInArgument x:TypeArguments="p3:Document" Name="DocumentObjectModel" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p2:IntelligentKeywordClassifier.DocumentObjectModel>
+                  <p2:IntelligentKeywordClassifier.DocumentPath>
+                    <InArgument x:TypeArguments="x:String">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
+                        <DelegateInArgument x:TypeArguments="x:String" Name="DocumentPath" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p2:IntelligentKeywordClassifier.DocumentPath>
+                  <p2:IntelligentKeywordClassifier.DocumentText>
+                    <InArgument x:TypeArguments="x:String">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
+                        <DelegateInArgument x:TypeArguments="x:String" Name="DocumentText" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p2:IntelligentKeywordClassifier.DocumentText>
+                  <p2:IntelligentKeywordClassifier.DocumentTypes>
+                    <InArgument x:TypeArguments="p4:ClassifierDocumentType[]">
+                      <DelegateArgumentValue x:TypeArguments="p4:ClassifierDocumentType[]">
+                        <DelegateInArgument x:TypeArguments="p4:ClassifierDocumentType[]" Name="DocumentTypes" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p2:IntelligentKeywordClassifier.DocumentTypes>
+                  <p2:IntelligentKeywordClassifier.PredictionId>
+                    <InArgument x:TypeArguments="x:String">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
+                        <DelegateInArgument x:TypeArguments="x:String" Name="PredictionId" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p2:IntelligentKeywordClassifier.PredictionId>
+                </p2:IntelligentKeywordClassifier>
+              </p2:ClassifyDocumentScope.Classifiers>
+            </p2:ClassifyDocumentScope>
+            <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="610,91" sap2010:WorkflowViewState.IdRef="LogMessage_2" Level="Info" Message="[classificationResults(0).DocumentTypeId]" />
+            <p5:DataExtractionScope DocumentTypeId="{x:Null}" ClassificationResult="[classificationResults(0)]" DisplayName="Data Extraction Scope" DocumentObjectModel="[dom]" DocumentPath="[CurrentFile.FullName]" DocumentText="[strDocumentText]" ExtractionResult="[extractionResults]" FormatValuesIfPossible="True" sap:VirtualizedContainerService.HintSize="610,513" sap2010:WorkflowViewState.IdRef="DataExtractionScope_1" Taxonomy="[taxonomy]" TaxonomyConfiguration="{}{&quot;TaxonomyMappings&quot;:{&quot;UI735e4409ce0f4f75b6ef54435fc08a3f&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;NoGroup.NoCategory.Comparendo&quot;:{&quot;FieldMappings&quot;:{&quot;NoGroup.NoCategory.Comparendo.Anio&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Anio&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.Mes&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Mes&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.Dia&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Dia&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.Hora&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Hora&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.Minuto&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Minuto&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.Direccion&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Direccion&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.Municipio&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Municipio&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.Localidad&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Localidad&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.Placa&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Placa&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.CodigodeInfraccion&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.CodigodeInfraccion&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.ClasedeServicio&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.ClasedeServicio&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.RadiodeAccion&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.RadiodeAccion&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.ModalidaddeTransporte&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.ModalidaddeTransporte&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.TrasnsportedePasajeros&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TrasnsportedePasajeros&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.ESPECIAL&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.ESPECIAL&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NumeroDocumentoInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumeroDocumentoInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.ORGTransito&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.ORGTransito&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.Catergoria&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Catergoria&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NumerodeLicenciaInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodeLicenciaInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.FechaVencimientoLicInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.FechaVencimientoLicInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.DireccionInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.DireccionInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.MunicipioInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.MunicipioInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.TelefonoInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TelefonoInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.EdadInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.EdadInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.TipoInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.ORGTTOLicTransito&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.ORGTTOLicTransito&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NumerodeLicTTO&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodeLicTTO&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoPropietario&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoPropietario&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NumerodeDocumentoPropietario&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodeDocumentoPropietario&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoPropietario&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoPropietario&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NombredeEmpresa&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NombredeEmpresa&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NITEmpresa&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NITEmpresa&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.TarjetadeOperacionEmpresa&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TarjetadeOperacionEmpresa&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoAgente&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoAgente&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.PlacaAgente&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.PlacaAgente&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.EntidadAgente&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.EntidadAgente&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NumerodePatio&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodePatio&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NumerodeGrua&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodeGrua&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.DirecciondePatio&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.DirecciondePatio&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.PlacaGrua&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.PlacaGrua&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.ObservacionesAgente&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.ObservacionesAgente&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NombreyApellido&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NombreyApellido&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.NumerodedocumentoTestigo&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodedocumentoTestigo&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.DireccionTestigo&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.DireccionTestigo&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.TelefonoTestigo&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TelefonoTestigo&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.FirmaAgente&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.FirmaAgente&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.FirmaInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.FirmaInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true},&quot;NoGroup.NoCategory.Comparendo.FirmaTestigo&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.FirmaTestigo&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:true}},&quot;ExtractorDocumentTypeId&quot;:null}}},&quot;UIb79746ccc35f490fa64aeb4c028dd555&quot;:{&quot;DocumentTypeMappings&quot;:{&quot;NoGroup.NoCategory.Comparendo&quot;:{&quot;FieldMappings&quot;:{&quot;NoGroup.NoCategory.Comparendo.Anio&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Anio&quot;,&quot;ExtractorTaxonomyFieldId&quot;:&quot;\&quot;\&quot;&quot;,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.Mes&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Mes&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.Dia&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Dia&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.Hora&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Hora&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.Minuto&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Minuto&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.Direccion&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Direccion&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.Municipio&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Municipio&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.Localidad&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Localidad&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.Placa&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Placa&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.CodigodeInfraccion&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.CodigodeInfraccion&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.ClasedeServicio&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.ClasedeServicio&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.RadiodeAccion&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.RadiodeAccion&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.ModalidaddeTransporte&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.ModalidaddeTransporte&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.TrasnsportedePasajeros&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TrasnsportedePasajeros&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.ESPECIAL&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.ESPECIAL&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NumeroDocumentoInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumeroDocumentoInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.ORGTransito&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.ORGTransito&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.Catergoria&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.Catergoria&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NumerodeLicenciaInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodeLicenciaInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.FechaVencimientoLicInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.FechaVencimientoLicInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.DireccionInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.DireccionInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.MunicipioInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.MunicipioInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.TelefonoInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TelefonoInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.EdadInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.EdadInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.TipoInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.ORGTTOLicTransito&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.ORGTTOLicTransito&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NumerodeLicTTO&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodeLicTTO&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoPropietario&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoPropietario&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NumerodeDocumentoPropietario&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodeDocumentoPropietario&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoPropietario&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoPropietario&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NombredeEmpresa&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NombredeEmpresa&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NITEmpresa&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NITEmpresa&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.TarjetadeOperacionEmpresa&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TarjetadeOperacionEmpresa&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoAgente&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoAgente&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.PlacaAgente&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.PlacaAgente&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.EntidadAgente&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.EntidadAgente&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NumerodePatio&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodePatio&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NumerodeGrua&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodeGrua&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.DirecciondePatio&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.DirecciondePatio&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.PlacaGrua&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.PlacaGrua&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.ObservacionesAgente&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.ObservacionesAgente&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NombreyApellido&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NombreyApellido&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.NumerodedocumentoTestigo&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodedocumentoTestigo&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.DireccionTestigo&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.DireccionTestigo&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.TelefonoTestigo&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.TelefonoTestigo&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.FirmaAgente&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.FirmaAgente&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.FirmaInfractor&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.FirmaInfractor&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false},&quot;NoGroup.NoCategory.Comparendo.FirmaTestigo&quot;:{&quot;OriginalTaxonomyFieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.FirmaTestigo&quot;,&quot;ExtractorTaxonomyFieldId&quot;:null,&quot;ShouldExtract&quot;:false}},&quot;ExtractorDocumentTypeId&quot;:&quot;\&quot;\&quot;&quot;}}}},&quot;ExtractorMinimumConfidence&quot;:{&quot;UIb79746ccc35f490fa64aeb4c028dd555&quot;:&quot;0&quot;,&quot;UI735e4409ce0f4f75b6ef54435fc08a3f&quot;:&quot;0&quot;},&quot;ExtractorsAliases&quot;:{},&quot;DocumentTypeOptionsByExtractor&quot;:{&quot;UI735e4409ce0f4f75b6ef54435fc08a3f&quot;:[],&quot;UIb79746ccc35f490fa64aeb4c028dd555&quot;:[{&quot;FieldId&quot;:&quot;&quot;,&quot;SubOptions&quot;:[{&quot;FieldId&quot;:&quot;name&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;vendor-addr&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;billing-name&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;billing-addr&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;shipping-addr&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;invoice-no&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;po-no&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;vendor-vat-no&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;date&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;tax&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;total&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;payment-terms&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;net-amount&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;due-date&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;discount&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;shipping-charges&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;payment-addr&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;billing-vat-no&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;currency&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;items&quot;,&quot;SubOptions&quot;:[{&quot;FieldId&quot;:&quot;description&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;quantity&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;unit-price&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;line-amount&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;item-po-no&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;line-no&quot;,&quot;SubOptions&quot;:null},{&quot;FieldId&quot;:&quot;part-no&quot;,&quot;SubOptions&quot;:null}]}]}]}}">
+              <p5:DataExtractionScope.Extractors>
+                <p5:FormExtractor SerializedSignatureFields="{x:Null}" ApiKey="[strApiKey]" DisplayName="Form Extractor" Endpoint="https://du.uipath.com/svc/formextractor" sap:VirtualizedContainerService.HintSize="234,192" sap2010:WorkflowViewState.IdRef="FormExtractor_1" MinOverlapPercentage="65" PersistenceId="UI735e4409ce0f4f75b6ef54435fc08a3f" SerializedSettings="{}{&quot;DocTypeSettings&quot;:[{&quot;DocumentTypeId&quot;:&quot;NoGroup.NoCategory.Comparendo&quot;,&quot;SignatureFields&quot;:[{&quot;FieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.FirmaAgente&quot;},{&quot;FieldId&quot;:&quot;NoGroup.NoCategory.Comparendo.FirmaInfractor&quot;}],&quot;HandwritingFields&quot;:[],&quot;BooleanSynonymsForYes&quot;:[],&quot;BooleanSynonymsForNo&quot;:[],&quot;CaseSensitiveSynonyms&quot;:false}]}" SerializedTemplates="[{&quot;DocumentTypeId&quot;:&quot;NoGroup.NoCategory.Comparendo&quot;,&quot;FormId&quot;:&quot;73788b7e&quot;,&quot;FormName&quot;:&quot;Comparendo Template&quot;,&quot;OriginalFileExtension&quot;:&quot;jpg&quot;,&quot;Pages&quot;:[{&quot;Page&quot;:0,&quot;Size&quot;:[0.0,0.0,1634.0,2318.0],&quot;SkewAngle&quot;:-0.3,&quot;Evidence&quot;:[{&quot;Text&quot;:&quot;HORA&quot;,&quot;Box&quot;:[155.0,840.0,54.0,19.0]},{&quot;Text&quot;:&quot;FECHA&quot;,&quot;Box&quot;:[156.0,761.0,62.0,19.0]},{&quot;Text&quot;:&quot;MES&quot;,&quot;Box&quot;:[214.0,554.0,42.0,19.0]},{&quot;Text&quot;:&quot;DIA&quot;,&quot;Box&quot;:[215.0,1017.0,33.0,18.0]},{&quot;Text&quot;:&quot;MINUTO&quot;,&quot;Box&quot;:[260.0,540.0,71.0,19.0]}],&quot;Fields&quot;:[{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.Anio&quot;,&quot;Box&quot;:[190.9348,279.3678,166.8167,58.2854]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.Mes&quot;,&quot;Box&quot;:[200.984,697.4145,217.0627,50.246]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.Dia&quot;,&quot;Box&quot;:[196.9643,1153.64819,389.909,50.246]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.Hora&quot;,&quot;Box&quot;:[239.171,281.3776,170.8364,46.2263]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.Minuto&quot;,&quot;Box&quot;:[251.23,695.4047,213.0431,42.2066]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.Direccion&quot;,&quot;Box&quot;:[357.7515,281.3776,385.8893,72.3542]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.Municipio&quot;,&quot;Box&quot;:[371.8204,918.4969,239.171,64.3149]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.Localidad&quot;,&quot;Box&quot;:[365.7909,1360.66174,235.1513,68.3346]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.Placa&quot;,&quot;Box&quot;:[466.2829,277.3579,395.9385,48.2362]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.CodigodeInfraccion&quot;,&quot;Box&quot;:[470.3026,1055.16614,522.5584,54.2657]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ClasedeServicio&quot;,&quot;Box&quot;:[577.3857,822.0149,89.6467,25.8304]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ClasedeServicio&quot;,&quot;Box&quot;:[578.1454,1056.008,96.4842,28.8693]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ClasedeServicio&quot;,&quot;Box&quot;:[578.9052,1274.80688,85.8481,31.1484]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ClasedeServicio&quot;,&quot;Box&quot;:[582.7038,1498.164,95.7245,22.0318]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[577.175,281.6614,83.1132,24.2414]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[603.6353,282.5713,76.9854,24.4953]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[627.2558,284.321,78.735,29.7443]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[658.7498,285.1958,77.8602,23.6205]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[685.8696,283.4461,76.9854,24.4953]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[714.7391,279.9468,83.1092,23.6205]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[740.1093,281.6965,81.3595,26.245]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[766.3543,283.4461,76.9854,28.8695]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[796.9735,280.8216,78.735,24.4953]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[574.7658,587.0134,79.6099,24.4953]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[601.8856,587.8883,82.2344,28.8695]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[629.0054,587.0134,82.2344,27.1198]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[652.626,587.8883,79.6099,27.9947]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[684.9948,588.7631,78.735,25.3702]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[711.2398,587.8883,79.6099,28.8695]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[740.9842,588.7631,78.735,27.9947]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[768.9788,587.0134,77.8602,24.4953]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipodeVehiculo&quot;,&quot;Box&quot;:[796.0987,588.7631,77.8602,24.4953]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.RadiodeAccion&quot;,&quot;Box&quot;:[629.5411,1056.58655,94.2307,26.0638]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.RadiodeAccion&quot;,&quot;Box&quot;:[631.546,1495.66125,94.2307,30.0736]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ModalidaddeTransporte&quot;,&quot;Box&quot;:[686.3604,811.9754,99.4871,29.1427]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ModalidaddeTransporte&quot;,&quot;Box&quot;:[688.3702,1058.18079,95.4674,24.1181]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ModalidaddeTransporte&quot;,&quot;Box&quot;:[691.385,1278.2583,177.8708,26.1279]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TrasnsportedePasajeros&quot;,&quot;Box&quot;:[742.6359,912.4674,141.6937,27.1328]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TrasnsportedePasajeros&quot;,&quot;Box&quot;:[741.631,1160.68274,113.556,30.1476]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TrasnsportedePasajeros&quot;,&quot;Box&quot;:[744.6458,1360.66174,138.679,30.1476]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ESPECIAL&quot;,&quot;Box&quot;:[800.9213,813.9852,98.4822,19.0935]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ESPECIAL&quot;,&quot;Box&quot;:[800.9213,1059.18567,90.4428,21.1033]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ESPECIAL&quot;,&quot;Box&quot;:[799.9164,1280.26807,75.369,25.123]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ESPECIAL&quot;,&quot;Box&quot;:[803.936,1501.35059,85.4182,19.0935]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoInfractor&quot;,&quot;Box&quot;:[908.4477,691.385,118.5806,44.2165]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoInfractor&quot;,&quot;Box&quot;:[907.4428,810.9705,99.4871,44.2165]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoInfractor&quot;,&quot;Box&quot;:[908.4477,913.4723,140.6888,43.2116]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoInfractor&quot;,&quot;Box&quot;:[908.4477,1054.16113,95.4674,45.2214]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NumeroDocumentoInfractor&quot;,&quot;Box&quot;:[910.4576,1151.63843,439.1501,43.2116]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ORGTransito&quot;,&quot;Box&quot;:[975.5537,685.5242,669.9441,45.5418]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.Catergoria&quot;,&quot;Box&quot;:[978.1198,1361.02112,232.6621,46.9498]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodeLicenciaInfractor&quot;,&quot;Box&quot;:[1036.67566,665.1502,927.6149,40.7479]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.FechaVencimientoLicInfractor&quot;,&quot;Box&quot;:[1092.624,692.172,363.324,45.084]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoInfractor&quot;,&quot;Box&quot;:[1095.276,1059.474,534.378,47.736]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.DireccionInfractor&quot;,&quot;Box&quot;:[1178.04614,683.0688,671.7551,56.5688]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.MunicipioInfractor&quot;,&quot;Box&quot;:[1164.228,1355.172,238.68,68.952]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TelefonoInfractor&quot;,&quot;Box&quot;:[1234.506,901.68,371.28,43.758]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.EdadInfractor&quot;,&quot;Box&quot;:[1242.462,1497.054,100.776,43.758]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoInfractor&quot;,&quot;Box&quot;:[901.68,584.766,86.19,51.714]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoInfractor&quot;,&quot;Box&quot;:[957.372,586.092,78.234,29.172]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoInfractor&quot;,&quot;Box&quot;:[985.218,588.744,75.582,30.498]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ORGTTOLicTransito&quot;,&quot;Box&quot;:[1101.906,37.128,241.332,43.758]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodeLicTTO&quot;,&quot;Box&quot;:[1105.884,277.134,387.192,33.15]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoPropietario&quot;,&quot;Box&quot;:[1368.432,31.824,114.036,31.824]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoPropietario&quot;,&quot;Box&quot;:[1369.758,144.534,132.6,35.802]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoPropietario&quot;,&quot;Box&quot;:[1368.432,279.786,79.56,31.824]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TipoDocumentoPropietario&quot;,&quot;Box&quot;:[1364.454,356.694,87.516,41.106]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodeDocumentoPropietario&quot;,&quot;Box&quot;:[1354.82385,452.5508,456.7934,45.2551]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoPropietario&quot;,&quot;Box&quot;:[1368.432,906.984,686.868,37.128]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NombredeEmpresa&quot;,&quot;Box&quot;:[1451.97,33.15,773.058,70.278]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NITEmpresa&quot;,&quot;Box&quot;:[1522.24792,66.3,1259.7,47.736]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TarjetadeOperacionEmpresa&quot;,&quot;Box&quot;:[1449.318,812.838,777.036,83.538]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NombreyApellidoAgente&quot;,&quot;Box&quot;:[1627.002,29.172,627.198,39.78]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.PlacaAgente&quot;,&quot;Box&quot;:[1617.71985,663.0,388.518,53.04]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.EntidadAgente&quot;,&quot;Box&quot;:[1625.6759,1051.518,546.312,47.736]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodePatio&quot;,&quot;Box&quot;:[1779.492,111.384,464.1,55.692]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodeGrua&quot;,&quot;Box&quot;:[1779.492,721.344,324.87,51.714]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.DirecciondePatio&quot;,&quot;Box&quot;:[1837.83594,224.094,351.39,50.388]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.PlacaGrua&quot;,&quot;Box&quot;:[1837.83594,702.78,344.76,46.41]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.ObservacionesAgente&quot;,&quot;Box&quot;:[1923.417,28.1378,1561.64575,76.3739]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NombreyApellido&quot;,&quot;Box&quot;:[2058.07642,26.1279,556.7257,64.3149]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.NumerodedocumentoTestigo&quot;,&quot;Box&quot;:[2052.04663,576.8241,225.1021,66.3247]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.DireccionTestigo&quot;,&quot;Box&quot;:[2054.05664,805.9459,347.7023,70.3444]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.TelefonoTestigo&quot;,&quot;Box&quot;:[2064.10571,1151.63843,438.1451,54.2657]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.FirmaAgente&quot;,&quot;Box&quot;:[2166.60767,44.2165,508.4895,68.3346]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.FirmaInfractor&quot;,&quot;Box&quot;:[2188.71582,588.8831,387.8991,40.1968]},{&quot;Field&quot;:&quot;NoGroup.NoCategory.Comparendo.FirmaTestigo&quot;,&quot;Box&quot;:[2160.57813,1057.1759,416.0369,90.4428]}],&quot;Tables&quot;:[]}],&quot;AnchorBasedConfiguration&quot;:{&quot;AnchorBasedFieldConfiguration&quot;:[]}}]" Timeout="100000">
+                  <p5:FormExtractor.DocumentBounds>
+                    <InArgument x:TypeArguments="p7:ResultsDocumentBounds">
+                      <DelegateArgumentValue x:TypeArguments="p7:ResultsDocumentBounds">
+                        <DelegateInArgument x:TypeArguments="p7:ResultsDocumentBounds" Name="DocumentBounds" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p5:FormExtractor.DocumentBounds>
+                  <p5:FormExtractor.DocumentObjectModel>
+                    <InArgument x:TypeArguments="p3:Document">
+                      <DelegateArgumentValue x:TypeArguments="p3:Document">
+                        <DelegateInArgument x:TypeArguments="p3:Document" Name="DocumentObjectModel" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p5:FormExtractor.DocumentObjectModel>
+                  <p5:FormExtractor.DocumentPath>
+                    <InArgument x:TypeArguments="x:String">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
+                        <DelegateInArgument x:TypeArguments="x:String" Name="DocumentPath" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p5:FormExtractor.DocumentPath>
+                  <p5:FormExtractor.DocumentText>
+                    <InArgument x:TypeArguments="x:String">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
+                        <DelegateInArgument x:TypeArguments="x:String" Name="DocumentText" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p5:FormExtractor.DocumentText>
+                  <p5:FormExtractor.ExtractorDocumentType>
+                    <InArgument x:TypeArguments="p6:ExtractorDocumentType">
+                      <DelegateArgumentValue x:TypeArguments="p6:ExtractorDocumentType">
+                        <DelegateInArgument x:TypeArguments="p6:ExtractorDocumentType" Name="ExtractorDocumentType" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p5:FormExtractor.ExtractorDocumentType>
+                  <p5:FormExtractor.ExtractorResult>
+                    <OutArgument x:TypeArguments="p6:ExtractorResult">
+                      <DelegateArgumentReference x:TypeArguments="p6:ExtractorResult">
+                        <DelegateOutArgument x:TypeArguments="p6:ExtractorResult" Name="ExtractorResult" />
+                      </DelegateArgumentReference>
+                    </OutArgument>
+                  </p5:FormExtractor.ExtractorResult>
+                  <p5:FormExtractor.PredictionId>
+                    <InArgument x:TypeArguments="x:String">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
+                        <DelegateInArgument x:TypeArguments="x:String" Name="PredictionId" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p5:FormExtractor.PredictionId>
+                </p5:FormExtractor>
+                <p8:MachineLearningExtractor SelectedMLSkill="{x:Null}" ApiKey="[strApiKey]" Configuration="{}{&quot;Endpoint&quot;:&quot;https://du.uipath.com/ie/invoices&quot;,&quot;ApiKey&quot;:&quot;&quot;,&quot;AvailableMLSkills&quot;:[]}" DisplayName="Machine Learning Extractor" Endpoint="https://du.uipath.com/ie/invoices" sap:VirtualizedContainerService.HintSize="234,192" sap2010:WorkflowViewState.IdRef="MachineLearningExtractor_1" PersistenceId="UIb79746ccc35f490fa64aeb4c028dd555" RetryOnFailure="True" Timeout="100000" UseServerSideOCR="True">
+                  <p8:MachineLearningExtractor.AvailableMLSkills>
+                    <sc:BindingList x:TypeArguments="x:String" AllowEdit="True" AllowNew="False" AllowRemove="True" RaiseListChangedEvents="True" />
+                  </p8:MachineLearningExtractor.AvailableMLSkills>
+                  <p8:MachineLearningExtractor.DocumentBounds>
+                    <InArgument x:TypeArguments="p7:ResultsDocumentBounds">
+                      <DelegateArgumentValue x:TypeArguments="p7:ResultsDocumentBounds">
+                        <DelegateInArgument x:TypeArguments="p7:ResultsDocumentBounds" Name="DocumentBounds" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p8:MachineLearningExtractor.DocumentBounds>
+                  <p8:MachineLearningExtractor.DocumentObjectModel>
+                    <InArgument x:TypeArguments="p3:Document">
+                      <DelegateArgumentValue x:TypeArguments="p3:Document">
+                        <DelegateInArgument x:TypeArguments="p3:Document" Name="DocumentObjectModel" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p8:MachineLearningExtractor.DocumentObjectModel>
+                  <p8:MachineLearningExtractor.DocumentPath>
+                    <InArgument x:TypeArguments="x:String">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
+                        <DelegateInArgument x:TypeArguments="x:String" Name="DocumentPath" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p8:MachineLearningExtractor.DocumentPath>
+                  <p8:MachineLearningExtractor.DocumentText>
+                    <InArgument x:TypeArguments="x:String">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
+                        <DelegateInArgument x:TypeArguments="x:String" Name="DocumentText" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p8:MachineLearningExtractor.DocumentText>
+                  <p8:MachineLearningExtractor.ExtractorDocumentType>
+                    <InArgument x:TypeArguments="p6:ExtractorDocumentType">
+                      <DelegateArgumentValue x:TypeArguments="p6:ExtractorDocumentType">
+                        <DelegateInArgument x:TypeArguments="p6:ExtractorDocumentType" Name="ExtractorDocumentType" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p8:MachineLearningExtractor.ExtractorDocumentType>
+                  <p8:MachineLearningExtractor.ExtractorResult>
+                    <OutArgument x:TypeArguments="p6:ExtractorResult">
+                      <DelegateArgumentReference x:TypeArguments="p6:ExtractorResult">
+                        <DelegateOutArgument x:TypeArguments="p6:ExtractorResult" Name="ExtractorResult" />
+                      </DelegateArgumentReference>
+                    </OutArgument>
+                  </p8:MachineLearningExtractor.ExtractorResult>
+                  <p8:MachineLearningExtractor.PredictionId>
+                    <InArgument x:TypeArguments="x:String">
+                      <DelegateArgumentValue x:TypeArguments="x:String">
+                        <DelegateInArgument x:TypeArguments="x:String" Name="PredictionId" />
+                      </DelegateArgumentValue>
+                    </InArgument>
+                  </p8:MachineLearningExtractor.PredictionId>
+                </p8:MachineLearningExtractor>
+              </p5:DataExtractionScope.Extractors>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                  <x:Boolean x:Key="IsPinned">False</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </p5:DataExtractionScope>
+            <p5:ExportExtractionResults DataSet="[dataset_extraction]" DisplayName="Export Extraction Results" ExtractionResult="[extractionResults]" sap:VirtualizedContainerService.HintSize="610,173" sap2010:WorkflowViewState.IdRef="ExportExtractionResults_1" IncludeConfidence="False" IncludeOCRConfidence="False" />
+            <ui:ForEach x:TypeArguments="sd1:DataTable" CurrentIndex="{x:Null}" DisplayName="For Each" sap:VirtualizedContainerService.HintSize="610,330" sap2010:WorkflowViewState.IdRef="ForEach`1_1" Values="[dataset_extraction.Tables]">
+              <ui:ForEach.Body>
+                <ActivityAction x:TypeArguments="sd1:DataTable">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="sd1:DataTable" Name="table" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Body" sap:VirtualizedContainerService.HintSize="376,207" sap2010:WorkflowViewState.IdRef="Sequence_3">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <ui:WriteRange StartingCell="{x:Null}" AddHeaders="True" DataTable="[table]" DisplayName="Write Range" sap:VirtualizedContainerService.HintSize="334,115" sap2010:WorkflowViewState.IdRef="WriteRange_1" SheetName="[table.TableName]" WorkbookPath="[&quot;Extraccion\&quot;+CurrentFile.Name+&quot;.xlsx&quot;]" />
+                  </Sequence>
+                </ActivityAction>
+              </ui:ForEach.Body>
+            </ui:ForEach>
+          </Sequence>
+        </ActivityAction>
+      </ui:ForEachFileX.Body>
+    </ui:ForEachFileX>
+  </Sequence>
+</Activity>

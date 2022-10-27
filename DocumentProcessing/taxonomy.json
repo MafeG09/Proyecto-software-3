@@ -1,0 +1,1112 @@
+﻿{
+  "DataContractVersion": "1.1",
+  "DocumentTypes": [
+    {
+      "DocumentTypeId": "NoGroup.NoCategory.Comparendo",
+      "Group": "",
+      "Category": "",
+      "Name": "Comparendo",
+      "OptionalUniqueIdentifier": "",
+      "TypeField": {
+        "FieldId": "NoGroup.NoCategory.Comparendo.DocumentType",
+        "FieldName": "Document Type"
+      },
+      "Fields": [
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.Anio",
+          "FieldName": "Anio",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#038a18"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "a"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.Mes",
+          "FieldName": "Mes",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fa6616"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "m"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.Dia",
+          "FieldName": "Dia",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8a97a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "q"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.Hora",
+          "FieldName": "Hora",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#6eb84a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "h"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.Minuto",
+          "FieldName": "Minuto",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e5c342"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "w"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.Direccion",
+          "FieldName": "Direccion",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#5cd483"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "r"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.Municipio",
+          "FieldName": "Municipio",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8ece74"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "c"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.Localidad",
+          "FieldName": "Localidad",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#fca027"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "l"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.Placa",
+          "FieldName": "Placa",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#22aaeb"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "e"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.CodigodeInfraccion",
+          "FieldName": "Codigo de Infraccion",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e96e50"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "g"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.ClasedeServicio",
+          "FieldName": "Clase de Servicio",
+          "IsMultiValue": true,
+          "Type": "Set",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [
+            "Diplomatico",
+            "Oficial",
+            "Particular",
+            "Publico"
+          ],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#db2eff"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "v"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.TipodeVehiculo",
+          "FieldName": "Tipo de Vehiculo",
+          "IsMultiValue": false,
+          "Type": "Set",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [
+            "Bicicleta o Triciclo",
+            "Traccion Animal",
+            "Automovil",
+            "Campero",
+            "Camioneta",
+            "Microbus",
+            "Buseta",
+            "Bus",
+            "Bus Articulado",
+            "Camion",
+            "Volqueta",
+            "Tractocamion",
+            "Motociclo",
+            "Mototriciclo",
+            "Motocarro",
+            "Motoclicleta",
+            "Cuatrimoto",
+            "Remolque/Semirem"
+          ],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#60b3f5"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "y"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.RadiodeAccion",
+          "FieldName": "Radio de Accion",
+          "IsMultiValue": false,
+          "Type": "Set",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [
+            "Nacional",
+            "Municipal"
+          ],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#a4a799"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "j"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.ModalidaddeTransporte",
+          "FieldName": "Modalidad de Transporte",
+          "IsMultiValue": false,
+          "Type": "Set",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [
+            "Pasajeros",
+            "Mixto",
+            "Carga"
+          ],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#7bcaed"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "k"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.TrasnsportedePasajeros",
+          "FieldName": "Trasnsporte de Pasajeros",
+          "IsMultiValue": false,
+          "Type": "Set",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [
+            "Colectivo",
+            "Individual",
+            "Masivo"
+          ],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#a3c550"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "z"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.ESPECIAL",
+          "FieldName": "ESPECIAL",
+          "IsMultiValue": false,
+          "Type": "Set",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [
+            "Escolar",
+            "Asalariado",
+            "De Turismo",
+            "Ocacional"
+          ],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#38bcab"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "x"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.TipoDocumentoInfractor",
+          "FieldName": "Tipo Documento Infractor",
+          "IsMultiValue": false,
+          "Type": "Set",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [
+            "C.C",
+            "T.I",
+            "C.E",
+            "PASAP"
+          ],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d6c450"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "1"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NumeroDocumentoInfractor",
+          "FieldName": "Numero Documento Infractor",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#545ae6"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "2"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.ORGTransito",
+          "FieldName": "ORG. Transito",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b86f8a"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "3"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.Catergoria",
+          "FieldName": "Catergoria ",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#a97fa0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "4"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NumerodeLicenciaInfractor",
+          "FieldName": "Numero de Licencia Conduccion Infractor",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#3baac1"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "5"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.FechaVencimientoLicInfractor",
+          "FieldName": "Fecha Vencimiento Lic Conduccion Infractor",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#75aa27"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "6"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NombreyApellidoInfractor",
+          "FieldName": "Nombre y Apellido Infractor",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#c8c399"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "7"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.DireccionInfractor",
+          "FieldName": "Direccion Infractor",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#595a66"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "8"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.MunicipioInfractor",
+          "FieldName": "Municipio Infractor",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8ec789"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "9"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.TelefonoInfractor",
+          "FieldName": "Telefono Infractor",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#8192e9"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "@"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.EdadInfractor",
+          "FieldName": "Edad Infractor",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#9590b7"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "#"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.TipoInfractor",
+          "FieldName": "Tipo Infractor ",
+          "IsMultiValue": false,
+          "Type": "Set",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [
+            "Conductor",
+            "Peaton",
+            "Pasajero"
+          ],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b4af99"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "$"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.ORGTTOLicTransito",
+          "FieldName": "ORG. TTO Lic Transito",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#f6b638"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "%"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NumerodeLicTTO",
+          "FieldName": "Numero de Lic TTO",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#69d5ed"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "^"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.TipoDocumentoPropietario",
+          "FieldName": "Tipo Documento Propietario",
+          "IsMultiValue": false,
+          "Type": "Set",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [
+            "C.C",
+            "T.I",
+            "C.E",
+            "PASP"
+          ],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d8328d"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "&"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NumerodeDocumentoPropietario",
+          "FieldName": "Numero de Documento Propietario",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e2557f"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "*"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NombreyApellidoPropietario",
+          "FieldName": "Nombre y Apellido Propietario",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#a195a0"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "("
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NombredeEmpresa",
+          "FieldName": "Nombre de Empresa ",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#27e1e6"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": ")"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NITEmpresa",
+          "FieldName": "NIT Empresa",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#579f52"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "["
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.TarjetadeOperacionEmpresa",
+          "FieldName": "Tarjeta de Operacion Empresa",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#af1c88"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "]"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NombreyApellidoAgente",
+          "FieldName": "Nombre y Apellido Agente",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#83b377"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "{"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.PlacaAgente",
+          "FieldName": "Placa Agente",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#e0d966"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "}"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.EntidadAgente",
+          "FieldName": "Entidad Agente",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#efbe42"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": "<"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NumerodePatio",
+          "FieldName": "Numero de Patio",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#dfaf42"
+            },
+            {
+              "Key": "Hotkey",
+              "Value": ">"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NumerodeGrua",
+          "FieldName": "Numero de Grua",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#99b8a3"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.DirecciondePatio",
+          "FieldName": "Direccion de Patio",
+          "IsMultiValue": false,
+          "Type": "Date",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#7e94cd"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.PlacaGrua",
+          "FieldName": "Placa Grua",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#af72a7"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.ObservacionesAgente",
+          "FieldName": "Observaciones Agente",
+          "IsMultiValue": false,
+          "Type": "Text",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#b6af60"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NombreyApellido",
+          "FieldName": "Nombre y Apellido",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#86bae6"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.NumerodedocumentoTestigo",
+          "FieldName": "Numero de documento Testigo",
+          "IsMultiValue": false,
+          "Type": "Name",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#d0a750"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.DireccionTestigo",
+          "FieldName": "Direccion Testigo",
+          "IsMultiValue": false,
+          "Type": "Address",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#f1c25c"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.TelefonoTestigo",
+          "FieldName": "Telefono Testigo",
+          "IsMultiValue": false,
+          "Type": "Number",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#7632d8"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.FirmaAgente",
+          "FieldName": "Firma Agente",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#954af5"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.FirmaInfractor",
+          "FieldName": "Firma Infractor",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#778772"
+            }
+          ]
+        },
+        {
+          "FieldId": "NoGroup.NoCategory.Comparendo.FirmaTestigo",
+          "FieldName": "Firma Testigo",
+          "IsMultiValue": false,
+          "Type": "Boolean",
+          "DeriveFieldsFormat": "",
+          "Components": [],
+          "SetValues": [],
+          "Metadata": [
+            {
+              "Key": "Color",
+              "Value": "#15e5ec"
+            }
+          ]
+        }
+      ]
+    }
+  ],
+  "Groups": [],
+  "SupportedLanguages": [
+    {
+      "Name": "Undetermined Language",
+      "Code": "und"
+    },
+    {
+      "Name": "Bulgarian",
+      "Code": "bul"
+    },
+    {
+      "Name": "Cantonese",
+      "Code": "yue"
+    },
+    {
+      "Name": "Danish",
+      "Code": "dan"
+    },
+    {
+      "Name": "Dutch",
+      "Code": "nld"
+    },
+    {
+      "Name": "English",
+      "Code": "eng"
+    },
+    {
+      "Name": "French",
+      "Code": "fra"
+    },
+    {
+      "Name": "Georgian",
+      "Code": "kat"
+    },
+    {
+      "Name": "German",
+      "Code": "deu"
+    },
+    {
+      "Name": "Greek",
+      "Code": "ell"
+    },
+    {
+      "Name": "Hebrew",
+      "Code": "heb"
+    },
+    {
+      "Name": "Hindi",
+      "Code": "hin"
+    },
+    {
+      "Name": "Italian",
+      "Code": "ita"
+    },
+    {
+      "Name": "Japanese",
+      "Code": "jpn"
+    },
+    {
+      "Name": "Korean",
+      "Code": "kor"
+    },
+    {
+      "Name": "Macedonian",
+      "Code": "mkd"
+    },
+    {
+      "Name": "Mandarin",
+      "Code": "zho"
+    },
+    {
+      "Name": "Marathi",
+      "Code": "mar"
+    },
+    {
+      "Name": "Norwegian",
+      "Code": "nor"
+    },
+    {
+      "Name": "Polish",
+      "Code": "pol"
+    },
+    {
+      "Name": "Portuguese",
+      "Code": "por"
+    },
+    {
+      "Name": "Romanian",
+      "Code": "ron"
+    },
+    {
+      "Name": "Russian",
+      "Code": "rus"
+    },
+    {
+      "Name": "Serbian",
+      "Code": "srp"
+    },
+    {
+      "Name": "Spanish",
+      "Code": "spa"
+    },
+    {
+      "Name": "Swedish",
+      "Code": "swe"
+    },
+    {
+      "Name": "Telugu",
+      "Code": "tel"
+    },
+    {
+      "Name": "Turkish",
+      "Code": "tur"
+    }
+  ]
+}
